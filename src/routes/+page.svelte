@@ -9,7 +9,10 @@
         const scrollTxt = document.getElementById('scrollTxt');
         const whiteCircle = document.getElementById('whiteCircle');
         const about = document.getElementById('about');
-
+        const about1 = document.getElementById('about1');
+        const about2 = document.getElementById('about2');
+        const about3 = document.getElementById('about3');
+    
         if (luma) {
             luma.style.textShadow = '0 0 20px rgba(255, 255, 255, 0.25), 0 0 200px rgba(255, 255, 255, 0.5)';
             luma.style.transition = 'opacity 2s ease-in-out, transform 2s ease-in-out';
@@ -64,10 +67,23 @@
                 }
             }
 
-            if (about && scroll > 100) {
+            if (about && about1 && about2 && about3 && scroll > 100) {
                 about.style.transition = 'opacity 1s ease-in-out';
                 about.style.opacity = '1';
+                about1.style.transition = 'transform 1s ease-in-out';
+                about2.style.transition = 'transform 1s ease-in-out';
+                about3.style.transition = 'transform 1s ease-in-out';
+                about1.style.transform = 'translateY(0)';
+                setTimeout(() => {
+                    about2.style.transform = 'translateY(0)';
+                }, 250);
+                setTimeout(() => {
+                    about3.style.transform = 'translateY(0)';
+                }, 500);
             }
+
+
+
         });
 
     });
@@ -82,23 +98,23 @@
     <p id="scrollTxt" class="absolute bottom-10 w-full text-center justify-center text-xs">
         scroll to begin
     </p>
-    <div id="about" class="flex flex-col justify-around gap-16 m-5 text-[#1E1E1E] opacity-0 items-center text-center lg:text-2xl sm:text-xl ">
-        <p>No matter your project size, budget or requirements, we will always do our best to bring your vision to reality.</p>
-        <p>We will provide a solution for all your photo, video or visual projects.</p>
-        <p>Whether it's a commercial car photoshoot, music video, marketing ad, animation or anything else, we've got you covered.</p>
+    <div id="about" class="flex flex-col justify-around gap-16 m-5 mb-64 text-[#1E1E1E] opacity-0 items-center text-center lg:text-2xl sm:text-xl ">
+        <p id="about1" class="translate-y-10">No matter your project size, budget or requirements, we will always do our best to bring your vision to reality.</p>
+        <p id="about2" class="translate-y-10">We will provide a solution for all your photo, video or visual projects.</p>
+        <p id="about3" class="translate-y-10">Whether it's a commercial car photoshoot, music video, marketing ad, animation or anything else, we've got you covered.</p>
     </div>
     <div class="flex flex-col items-center justify-around gap-16 p-4 my-16 py-16 text-white bg-[#1E1E1E]">
         <h2 class="text-4xl mb-0 px-2 text-center">What our clients say about us:</h2>
         <div class="flex flex-col md:flex-row gap-8 lg:w-2/3">
-            <div class="flex flex-col p-2 md:w-1/2">
-                <div class="flex items-center bg-[#333333] p-5 rounded-xl">
+            <div class="flex flex-col md:w-1/2 bg-[#3a3a3a] rounded-xl">
+                <div class="flex items-center bg-[#2a2a2a] p-5 rounded-t-xl">
                     <img class="" src="images/Dwiger.png" alt="Client testimonial">
                     <div class="ml-5 text-white">
                         <h3 class=" text-xl opacity-90">Dwiger automotive</h3>
                         <h4 class=" text-sm opacity-50">Car photoshoots, marketing videos, car edits</h4>
                     </div>
                 </div>
-                <p class="mt-5 opacity-75 mx-3">
+                <p class="my-4 mx-7 opacity-75 font-['Montserrat'] italic">
                     Man! Cool<br>
                     I really like it<br>
                     We should do all the videos like that<br>
@@ -108,16 +124,16 @@
                     Let's film a lot!!!!<br>
                 </p>
             </div>
-            <div class="flex flex-col p-2 md:w-1/2">
-                <div class="flex items-center bg-[#333333] p-5 rounded-xl">
+            <div class="flex flex-col md:w-1/2 bg-[#3a3a3a] rounded-xl">
+                <div class="flex items-center bg-[#2a2a2a] p-5 rounded-t-xl">
                     <img class="" src="images/Mark.png" alt="Client testimonial">
                     <div class="ml-5 text-white">
                         <h3 class=" text-xl opacity-90">Mark Steiner</h3>
                         <h4 class=" text-sm opacity-50">Music video</h4>
                     </div>
                 </div>
-                <p class="mt-5 opacity-75 mx-3">
-                    WOW!!! OLIVER… I am TRULY impressed with the music video. Not only with your ability to conceive and direct, but also to film and to EDIT. I love the fact that you pay such close attention to detail, especially in terms of lip sync and music instrument sync. (I know several “professional” filmmakers who do not possess half of your abilities and skills. I’m honestly amazed. You are a remarkable young man, full of talent.<br>...
+                <p class="my-4 mx-7 opacity-75 font-['Montserrat'] italic">
+                    WOW!!! OLIVER… I am TRULY impressed with the music video. Not only with your ability to conceive and direct, but also to film and to EDIT. I love the fact that you pay such close attention to detail, especially in terms of lip sync and music instrument sync. (I know several “professional” filmmakers who do not possess half of your abilities and skills. I’m honestly amazed. You are a remarkable young man, full of talent.
                 </p>
             </div>
         </div>
