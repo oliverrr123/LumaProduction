@@ -12,6 +12,11 @@
         const about1 = document.getElementById('about1');
         const about2 = document.getElementById('about2');
         const about3 = document.getElementById('about3');
+        const arrow = document.getElementById('arrow');
+        if (arrow) {
+            const pathLength = arrow.clientHeight;
+
+        }
     
         if (luma) {
             luma.style.textShadow = '0 0 20px rgba(255, 255, 255, 0.25), 0 0 200px rgba(255, 255, 255, 0.5)';
@@ -82,8 +87,10 @@
                 }, 500);
             }
 
-
-
+            // // Adjust the path length of the arrow based on scroll position
+            // if (arrow) {
+            //     let scrollPercentage = (document.getElemen.)
+            // }
         });
 
     });
@@ -140,7 +147,11 @@
     </div>
     <div class=" flex flex-col items-center justify-center py-20 gap-10 mb-16">
         <h1 class="text-3xl text-center text-[#1E1E1E]">Bring your vision to reality:</h1>
-        <button class="bg-[#1E1E1E] text-white px-10 py-2 rounded-full text-2xl transition-colors hover:bg-[#3E3E3E]">Contact</button>
+        <a href="/contact"><button class="bg-[#1E1E1E] text-white px-10 py-2 rounded-full text-2xl transition-colors hover:bg-[#3E3E3E]">Contact</button></a>
+        <!-- <svg width="65" height="44" viewBox="0 0 65 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M64 42.5C51 45.5 38.6 40 35 35.5C19.5 16.125 39.5 17.5 43 22.5C50.2197 32.8139 33 36.5 19.5 27.5C9.16113 20.6074 3.16667 6.33333 2.5 1M2.5 1L1 17.5M2.5 1L15 9.5" stroke="black"/>
+        </svg> -->
+            
     </div>
     <div class="flex justify-center text-xs text-[#1E1E1E] m-7 opacity-50">
         © 2024 Luma production
