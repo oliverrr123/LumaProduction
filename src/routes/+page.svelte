@@ -82,15 +82,15 @@
     <p id="scrollTxt" class="absolute bottom-10 w-full text-center justify-center text-xs">
         scroll to begin
     </p>
-    <div id="about" class="flex flex-col items-center justify-around gap-16 m-5 text-[#1E1E1E] opacity-0">
+    <div id="about" class="flex flex-col justify-around gap-16 m-5 text-[#1E1E1E] opacity-0 items-center text-center lg:text-2xl sm:text-xl ">
         <p>No matter your project size, budget or requirements, we will always do our best to bring your vision to reality.</p>
         <p>We will provide a solution for all your photo, video or visual projects.</p>
         <p>Whether it's a commercial car photoshoot, music video, marketing ad, animation or anything else, we've got you covered.</p>
     </div>
     <div class="flex flex-col items-center justify-around gap-16 p-4 my-16 py-16 text-white bg-[#1E1E1E]">
         <h2 class="text-4xl mb-0 px-2 text-center">What our clients say about us:</h2>
-        <div class="flex flex-col gap-8">
-            <div class="flex flex-col p-2">
+        <div class="flex flex-col md:flex-row gap-8 lg:w-2/3">
+            <div class="flex flex-col p-2 md:w-1/2">
                 <div class="flex items-center bg-[#333333] p-5 rounded-xl">
                     <img class="" src="images/Dwiger.png" alt="Client testimonial">
                     <div class="ml-5 text-white">
@@ -108,7 +108,7 @@
                     Let's film a lot!!!!<br>
                 </p>
             </div>
-            <div class="flex flex-col p-2">
+            <div class="flex flex-col p-2 md:w-1/2">
                 <div class="flex items-center bg-[#333333] p-5 rounded-xl">
                     <img class="" src="images/Mark.png" alt="Client testimonial">
                     <div class="ml-5 text-white">
