@@ -114,16 +114,16 @@
     </section>
     <section class="flex flex-col items-center justify-around gap-16 p-4 my-16 py-16 text-white bg-[#1E1E1E]">
         <h2 class="text-4xl mb-0 px-2 text-center">What our clients say about us:</h2>
-        <div class="flex flex-col md:flex-row gap-8 lg:w-2/3">
+        <div class="flex flex-col md:flex-row gap-8 lg:w-2/3 font-['Montserrat']">
             <div class="flex flex-col md:w-1/2 bg-[#3a3a3a] rounded-xl">
                 <div class="flex items-center bg-[#2a2a2a] p-5 rounded-t-xl">
                     <img class="" src="images/Dwiger.png" alt="Client testimonial">
                     <div class="ml-5 text-white">
                         <h3 class=" text-xl opacity-90">Dwiger automotive</h3>
-                        <h4 class=" text-sm opacity-50">Car photoshoots, marketing videos, car edits</h4>
+                        <h4 class=" text-sm opacity-50">Car photos, marketing videos, car edits</h4>
                     </div>
                 </div>
-                <p class="my-4 mx-7 opacity-75 font-['Montserrat'] italic">
+                <em class="my-4 mx-7 opacity-75">
                     Man! Cool<br>
                     I really like it<br>
                     We should do all the videos like that<br>
@@ -131,7 +131,7 @@
                     Very nice<br>
                     I am happy<br>
                     Let's film a lot!!!!<br>
-                </p>
+                </em>
             </div>
             <div class="flex flex-col md:w-1/2 bg-[#3a3a3a] rounded-xl">
                 <div class="flex items-center bg-[#2a2a2a] p-5 rounded-t-xl">
@@ -141,9 +141,9 @@
                         <h4 class=" text-sm opacity-50">Music video</h4>
                     </div>
                 </div>
-                <p class="my-4 mx-7 opacity-75 font-['Montserrat'] italic">
+                <em class="my-4 mx-7 opacity-75 pb-5">
                     WOW!!! OLIVER… I am TRULY impressed with the music video. Not only with your ability to conceive and direct, but also to film and to EDIT. I love the fact that you pay such close attention to detail, especially in terms of lip sync and music instrument sync. (I know several “professional” filmmakers who do not possess half of your abilities and skills. I’m honestly amazed. You are a remarkable young man, full of talent.
-                </p>
+                </em>
             </div>
         </div>
     </section>
