@@ -1,3 +1,3 @@
-# [Luma Production](https://luma-production.com/)
+# Luma Production
 
 https://luma-production.com/
