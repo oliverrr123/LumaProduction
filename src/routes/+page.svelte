@@ -123,7 +123,7 @@
                         <h4 class=" text-sm opacity-50">Car photos, marketing videos, car edits</h4>
                     </div>
                 </div>
-                <em class="my-4 mx-7 opacity-75">
+                <p class="my-4 mx-7 opacity-75">
                     Man! Cool<br>
                     I really like it<br>
                     We should do all the videos like that<br>
@@ -131,7 +131,7 @@
                     Very nice<br>
                     I am happy<br>
                     Let's film a lot!!!!<br>
-                </em>
+                </p>
             </div>
             <div class="flex flex-col md:w-1/2 bg-[#3a3a3a] rounded-xl">
                 <div class="flex items-center bg-[#2a2a2a] p-5 rounded-t-xl">
@@ -141,9 +141,21 @@
                         <h4 class=" text-sm opacity-50">Music video</h4>
                     </div>
                 </div>
-                <em class="my-4 mx-7 opacity-75 pb-5">
+                <p class="my-4 mx-7 opacity-75 pb-5">
                     WOW!!! OLIVER… I am TRULY impressed with the music video. Not only with your ability to conceive and direct, but also to film and to EDIT. I love the fact that you pay such close attention to detail, especially in terms of lip sync and music instrument sync. (I know several “professional” filmmakers who do not possess half of your abilities and skills. I’m honestly amazed. You are a remarkable young man, full of talent.
-                </em>
+                </p>
+            </div>
+            <div class="flex flex-col md:w-1/2 bg-[#3a3a3a] rounded-xl">
+                <div class="flex items-center bg-[#2a2a2a] p-5 rounded-t-xl">
+                    <img class="" src="images/Realyx.png" alt="Client testimonial">
+                    <div class="ml-5 text-white">
+                        <h3 class=" text-xl opacity-90">Realyx</h3>
+                        <h4 class=" text-sm opacity-50">Marketing videos</h4>
+                    </div>
+                </div>
+                <p class="my-4 mx-7 opacity-75 pb-5">
+                    Právě jsi se stal prvním člověkem, u kterého nemusím nic reklamovat, předělávat a hned první verze je dokonalá. Good job. 👏
+                </p>
             </div>
         </div>
     </section>
@@ -151,8 +163,12 @@
         <h1 class="text-3xl text-center text-[#1E1E1E] mb-10">Our recent work:</h1>
         <div class="flex flex-col gap-8 pb-20">
             <div class="flex justify-center gap-8">
-                <a title="Porsche Cayenne Polishing Edit for Dwiger Automotive" href="https://www.instagram.com/reel/DAlrmHkIp59/" target="_blank"><img src="/images/ourwork/PorscheCayennePolishingEdit.jpg" width="175px" alt="Video Thumbnail - Porsche Cayenne Polishing Edit for Dwiger Autostyle" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
+                <a title="Lamborghini Huracan Evo Edit for Dwiger Automotive" href="https://www.instagram.com/p/DCJpYVqoWQY/" target="_blank"><img src="/images/ourwork/HuracanEdit.jpg" width="175px" alt="Video Thumbnail - Lamborghini Huracan Evo Edit for Dwiger Automotive" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
+                <a title="Marketing Video for Realyx" href="https://www.instagram.com/p/DCmEmRXAgIK/" target="_blank"><img src="/images/ourwork/Realyx.jpg" width="175px" alt="Video Thumbnail - Marketing Video for Realyx" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
+            </div>
+            <div class="flex justify-center gap-8">
                 <a title="Music Video for Mark Steiner" href="https://youtu.be/kXm4Nvl2DYw?si=JstOUSapeI3jxjUz" target="_blank"><img src="/images/ourwork/TwinFlames.jpg" width="175px" alt="Video Thumbnail - Music Video for Mark Steiner" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
+                <a title="Porsche Cayenne Polishing Edit for Dwiger Automotive" href="https://www.instagram.com/reel/DAlrmHkIp59/" target="_blank"><img src="/images/ourwork/PorscheCayennePolishingEdit.jpg" width="175px" alt="Video Thumbnail - Porsche Cayenne Polishing Edit for Dwiger Autostyle" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
             </div>
             <div class="flex justify-center gap-8">
                 <a title="Brabus G900 Edit for Dwiger Automotive" href="https://www.instagram.com/reel/DAQ9SmXowg3/" target="_blank"><img src="/images/ourwork/G900.jpg" width="175px" alt="Video Thumbnail - Brabus G900 Edit for Dwiger Automotive" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
@@ -174,13 +190,13 @@
         </div>
         <div class="flex justify-center text-xs text-white p-7 opacity-30">
             <a target="_blank" href="https://www.youtube.com/@luma.production"><img src="icons/youtube.svg" alt="Youtube" class="w-5 h-5 mx-2 filter invert"></a>
-            <a target="_blank" href="https://www.facebook.com/luma.prod/"><img src="icons/facebook.svg" alt="Facebook" class="w-5 h-5 mx-2 filter invert"></a>
+            <!-- <a target="_blank" href="https://www.facebook.com/luma.prod/"><img src="icons/facebook.svg" alt="Facebook" class="w-5 h-5 mx-2 filter invert"></a> -->
             <a target="_blank" href="https://www.instagram.com/luma.production_"><img src="icons/instagram.svg" alt="Instagram" class="w-5 h-5 mx-2 filter invert"></a>
+            <a target="_blank" href="https://www.linkedin.com/company/lumaprod/"><img src="icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 mx-2 filter invert"></a>
             <!-- <a target="_blank" href="https://www.tiktok.com/@luma.producti0n"><img src="icons/tiktok.svg" alt="TikTok" class="w-5 h-5 mx-2 filter invert"></a> -->
             <a target="_blank" href="mailto:hello@luma-production.com"><img src="icons/mail.svg" alt="Mail" class="w-5 h-5 mx-2 filter invert"></a>
             <a target="_blank" href="tel:+420776781248"><img src="icons/phone.svg" alt="Phone" class="w-5 h-5 mx-2 filter invert"></a>
             <!-- <a target="_blank" href="https://www.google.com/"><img src="icons/twitter-x.svg" alt="Twitter | X" class="w-5 h-5 mx-2"></a> -->
-            <!-- <a target="_blank" href="https://www.google.com/"><img src="icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5 mx-2"></a> -->
         </div>
     </footer>
 </main>
