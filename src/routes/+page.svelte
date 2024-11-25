@@ -3,6 +3,24 @@
 
     let scroll = 0;
 
+    const testimonials = [
+        {
+            name: 'Dwiger automotive',
+            role: 'Car photos, marketing videos, car edits',
+            testimony: "Man! Cool<br>I really like it<br>We should do all the videos like that<br>That's what I want!!!<br>Very nice<br>I am happy<br>Let's film a lot!!!!<br>"
+        },
+        {
+            name: 'Mark Steiner',
+            role: 'Music video',
+            testimony: "WOW!!! OLIVER… I am TRULY impressed with the music video. Not only with your ability to conceive and direct, but also to film and to EDIT. I love the fact that you pay such close attention to detail, especially in terms of lip sync and music instrument sync. (I know several “professional” filmmakers who do not possess half of your abilities and skills. I'm honestly amazed. You are a remarkable young man, full of talent."
+        },
+        {
+            name: 'Realyx',
+            role: 'Marketing videos',
+            testimony: "Právě jsi se stal prvním člověkem, u kterého nemusím nic reklamovat, předělávat a hned první verze je dokonalá. Good job. 👏"
+        }
+    ]     
+
     onMount(() => {
         const luma = document.getElementById('luma');
         const description = document.getElementById('description');
@@ -90,7 +108,7 @@
             // // Adjust the path length of the arrow based on scroll position
             // if (arrow) {
             //     let scrollPercentage = (document.getElemen.)
-            // }
+            // }       
         });
 
     });
@@ -115,48 +133,18 @@
     <section class="flex flex-col items-center justify-around gap-16 p-8 my-16 py-16 text-white bg-[#1E1E1E]">
         <h2 class="text-4xl mb-0 px-2 text-center">What our clients say about us:</h2>
         <div class="flex flex-col lg:flex-row xl:w-4/5 gap-8 font-['Montserrat']">
-            <div class="flex flex-col lg:w-1/2 bg-[#3a3a3a] rounded-xl">
-                <div class="flex items-center bg-[rgb(42,42,42)] p-5 rounded-t-xl">
-                    <img class="" src="images/Dwiger.png" alt="Client testimonial">
-                    <div class="ml-5 text-white">
-                        <h3 class=" text-xl opacity-90">Dwiger automotive</h3>
-                        <h4 class=" text-sm opacity-50">Car photos, marketing videos, car edits</h4>
+            {#each testimonials as testimonial}
+                <div class="flex flex-col lg:w-1/2 bg-[#3a3a3a] rounded-xl">
+                    <div class="flex items-center bg-[rgb(42,42,42)] p-5 rounded-t-xl">
+                        <img class="" src="images/{testimonial.name}.png" alt="Client testimonial">
+                        <div class="ml-5 text-white">
+                            <h3 class=" text-xl opacity-90">{testimonial.name}</h3>
+                            <h4 class=" text-sm opacity-50">{testimonial.role}</h4>
+                        </div>
                     </div>
+                    <p class="my-4 mx-7 opacity-75">{@html testimonial.testimony}</p>
                 </div>
-                <p class="my-4 mx-7 opacity-75">
-                    Man! Cool<br>
-                    I really like it<br>
-                    We should do all the videos like that<br>
-                    That's what I want!!!<br>
-                    Very nice<br>
-                    I am happy<br>
-                    Let's film a lot!!!!<br>
-                </p>
-            </div>
-            <div class="flex flex-col lg:w-1/2 bg-[#3a3a3a] rounded-xl">
-                <div class="flex items-center bg-[#2a2a2a] p-5 rounded-t-xl">
-                    <img class="" src="images/Mark.png" alt="Client testimonial">
-                    <div class="ml-5 text-white">
-                        <h3 class=" text-xl opacity-90">Mark Steiner</h3>
-                        <h4 class=" text-sm opacity-50">Music video</h4>
-                    </div>
-                </div>
-                <p class="my-4 mx-7 opacity-75 pb-5">
-                    WOW!!! OLIVER… I am TRULY impressed with the music video. Not only with your ability to conceive and direct, but also to film and to EDIT. I love the fact that you pay such close attention to detail, especially in terms of lip sync and music instrument sync. (I know several “professional” filmmakers who do not possess half of your abilities and skills. I’m honestly amazed. You are a remarkable young man, full of talent.
-                </p>
-            </div>
-            <div class="flex flex-col lg:w-1/2 bg-[#3a3a3a] rounded-xl">
-                <div class="flex items-center bg-[#2a2a2a] p-5 rounded-t-xl">
-                    <img class="" src="images/Realyx.png" alt="Client testimonial">
-                    <div class="ml-5 text-white">
-                        <h3 class=" text-xl opacity-90">Realyx</h3>
-                        <h4 class=" text-sm opacity-50">Marketing videos</h4>
-                    </div>
-                </div>
-                <p class="my-4 mx-7 opacity-75 pb-5">
-                    Právě jsi se stal prvním člověkem, u kterého nemusím nic reklamovat, předělávat a hned první verze je dokonalá. Good job. 👏
-                </p>
-            </div>
+            {/each}
         </div>
     </section>
     <section>
