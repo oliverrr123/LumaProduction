@@ -112,11 +112,11 @@
         <p id="about2" class="translate-y-10">We will provide a solution for all your photo, video or visual projects.</p>
         <p id="about3" class="translate-y-10">Whether it's a commercial car photoshoot, music video, marketing ad, animation or anything else, we've got you covered.</p>
     </section>
-    <section class="flex flex-col items-center justify-around gap-16 p-4 my-16 py-16 text-white bg-[#1E1E1E]">
+    <section class="flex flex-col items-center justify-around gap-16 p-8 my-16 py-16 text-white bg-[#1E1E1E]">
         <h2 class="text-4xl mb-0 px-2 text-center">What our clients say about us:</h2>
-        <div class="flex flex-col md:flex-row gap-8 lg:w-2/3 font-['Montserrat']">
-            <div class="flex flex-col md:w-1/2 bg-[#3a3a3a] rounded-xl">
-                <div class="flex items-center bg-[#2a2a2a] p-5 rounded-t-xl">
+        <div class="flex flex-col lg:flex-row xl:w-4/5 gap-8 font-['Montserrat']">
+            <div class="flex flex-col lg:w-1/2 bg-[#3a3a3a] rounded-xl">
+                <div class="flex items-center bg-[rgb(42,42,42)] p-5 rounded-t-xl">
                     <img class="" src="images/Dwiger.png" alt="Client testimonial">
                     <div class="ml-5 text-white">
                         <h3 class=" text-xl opacity-90">Dwiger automotive</h3>
@@ -133,7 +133,7 @@
                     Let's film a lot!!!!<br>
                 </p>
             </div>
-            <div class="flex flex-col md:w-1/2 bg-[#3a3a3a] rounded-xl">
+            <div class="flex flex-col lg:w-1/2 bg-[#3a3a3a] rounded-xl">
                 <div class="flex items-center bg-[#2a2a2a] p-5 rounded-t-xl">
                     <img class="" src="images/Mark.png" alt="Client testimonial">
                     <div class="ml-5 text-white">
@@ -145,7 +145,7 @@
                     WOW!!! OLIVER… I am TRULY impressed with the music video. Not only with your ability to conceive and direct, but also to film and to EDIT. I love the fact that you pay such close attention to detail, especially in terms of lip sync and music instrument sync. (I know several “professional” filmmakers who do not possess half of your abilities and skills. I’m honestly amazed. You are a remarkable young man, full of talent.
                 </p>
             </div>
-            <div class="flex flex-col md:w-1/2 bg-[#3a3a3a] rounded-xl">
+            <div class="flex flex-col lg:w-1/2 bg-[#3a3a3a] rounded-xl">
                 <div class="flex items-center bg-[#2a2a2a] p-5 rounded-t-xl">
                     <img class="" src="images/Realyx.png" alt="Client testimonial">
                     <div class="ml-5 text-white">
