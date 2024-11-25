@@ -19,7 +19,34 @@
             role: 'Marketing videos',
             testimony: "Právě jsi se stal prvním člověkem, u kterého nemusím nic reklamovat, předělávat a hned první verze je dokonalá. Good job. 👏"
         }
-    ]     
+    ]
+
+    const recentWork = [
+        {
+            title: 'Lamborghini Huracan Evo Edit for Dwiger Automotive',
+            link: 'https://www.instagram.com/p/DCJpYVqoWQY/'
+        },
+        {
+            title: 'Marketing Video for Realyx',
+            link: 'https://www.instagram.com/p/DCmEmRXAgIK/'
+        },
+        {
+            title: 'Music Video for Mark Steiner',
+            link: 'https://youtu.be/kXm4Nvl2DYw?si=JstOUSapeI3jxjUz'
+        },
+        {
+            title: 'Porsche Cayenne Polishing Edit for Dwiger Automotive',
+            link: 'https://www.instagram.com/reel/DAlrmHkIp59/'
+        },
+        {
+            title: 'Brabus G900 Edit for Dwiger Automotive',
+            link: 'https://www.instagram.com/reel/DAQ9SmXowg3/'
+        },
+        {
+            title: 'RollsRoyce PDR Marketing Video + Edit for Dwiger Automotive',
+            link: 'https://www.instagram.com/reel/C_TNntVo3un/'
+        }
+    ]
 
     onMount(() => {
         const luma = document.getElementById('luma');
@@ -117,7 +144,7 @@
 <main class="font-['Montaga']">
     <div id="whiteCircle" class="fixed inset-0 bg-white opacity-0 -z-10"></div> <!-- White circle element -->
     <section>
-        <div class="flex flex-col items-center justify-center min-h-[100vh] text-8xl gap-y-2">
+        <div class="flex flex-col items-center justify-center min-h-[100vh] text-7xl lg:text-8xl gap-y-2">
             <h1 id="luma" class="font-['Montserrat'] opacity-0 translate-y-10 font-black">Luma.</h1>
             <p id="description" class="text-base ">your Media Production Agency</p>
         </div>
@@ -125,14 +152,14 @@
             scroll to begin
         </p>
     </section>
-    <section id="about" class="flex flex-col justify-around gap-16 m-5 mb-64 text-[#1E1E1E] opacity-0 items-center text-center lg:text-2xl sm:text-xl ">
+    <section id="about" class="flex flex-col justify-around gap-16 m-5 mb-64 text-[#1E1E1E] opacity-0 items-center text-center text-xl sm:px-10 sm:text-2xl">
         <p id="about1" class="translate-y-10">No matter your project size, budget or requirements, we will always do our best to bring your vision to reality.</p>
         <p id="about2" class="translate-y-10">We will provide a solution for all your photo, video or visual projects.</p>
         <p id="about3" class="translate-y-10">Whether it's a commercial car photoshoot, music video, marketing ad, animation or anything else, we've got you covered.</p>
     </section>
-    <section class="flex flex-col items-center justify-around gap-16 p-8 my-16 py-16 text-white bg-[#1E1E1E]">
+    <section class="flex flex-col items-center justify-around gap-16 p-8 my-10 py-16 text-white bg-[#1E1E1E]">
         <h2 class="text-4xl mb-0 px-2 text-center">What our clients say about us:</h2>
-        <div class="flex flex-col lg:flex-row xl:w-4/5 gap-8 font-['Montserrat']">
+        <div class="flex flex-col w-full md:w-2/3 lg:flex-row lg:w-full xl:w-4/5 gap-8 font-['Montserrat']">
             {#each testimonials as testimonial}
                 <div class="flex flex-col lg:w-1/2 bg-[#3a3a3a] rounded-xl">
                     <div class="flex items-center bg-[rgb(42,42,42)] p-5 rounded-t-xl">
@@ -149,7 +176,15 @@
     </section>
     <section>
         <h1 class="text-3xl text-center text-[#1E1E1E] mb-10">Our recent work:</h1>
-        <div class="flex flex-col gap-8 pb-20">
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 pb-6 place-items-center place-self-center place-content-center">
+            {#each recentWork as recentWorkItem}
+                <a title={recentWorkItem.title} href={recentWorkItem.link} target="_blank">
+                    <img src="images/ourwork/{recentWorkItem.title}.jpg" alt="Video Thumbnail - {recentWorkItem.title}" class="opacity-80 w-36 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none m-3" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)">
+                </a>
+            {/each}
+        </div>
+        <p class="text-center text-[#1E1E1E] opacity-50 pb-10">More will be shown soon...</p>
+        <!-- <div class="flex flex-col gap-8 pb-20">
             <div class="flex justify-center gap-8">
                 <a title="Lamborghini Huracan Evo Edit for Dwiger Automotive" href="https://www.instagram.com/p/DCJpYVqoWQY/" target="_blank"><img src="/images/ourwork/HuracanEdit.jpg" width="175px" alt="Video Thumbnail - Lamborghini Huracan Evo Edit for Dwiger Automotive" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
                 <a title="Marketing Video for Realyx" href="https://www.instagram.com/p/DCmEmRXAgIK/" target="_blank"><img src="/images/ourwork/Realyx.jpg" width="175px" alt="Video Thumbnail - Marketing Video for Realyx" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
@@ -162,11 +197,10 @@
                 <a title="Brabus G900 Edit for Dwiger Automotive" href="https://www.instagram.com/reel/DAQ9SmXowg3/" target="_blank"><img src="/images/ourwork/G900.jpg" width="175px" alt="Video Thumbnail - Brabus G900 Edit for Dwiger Automotive" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
                 <a title="RollsRoyce PDR Marketing Video + Edit for Dwiger Automotive" href="https://www.instagram.com/reel/C_TNntVo3un/" target="_blank"><img src="/images/ourwork/PDR.jpg" width="175px" alt="Video Thumbnail - RollsRoyce PDR Marketing Video + Edit for Dwiger Automotive" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
             </div>
-            <p class="text-center text-[#1E1E1E] opacity-50">More will be shown soon...</p>
-        </div>
+        </div> -->
     </section>
     <section class="bg-[#1E1E1E] flex flex-col items-center justify-center py-20 gap-10 pb-16">
-        <h1 class="text-3xl text-center text-white" style="text-shadow: 0 0 40px rgba(255, 255, 255, 0.25), 0 0 75px rgba(255, 255, 255, 0.55)">Bring your vision to reality:</h1>
+        <h1 class="text-3xl text-center text-white px-5" style="text-shadow: 0 0 40px rgba(255, 255, 255, 0.25), 0 0 75px rgba(255, 255, 255, 0.55)">Bring your vision to reality:</h1>
         <a href="/contact"><button class="text-[#1E1E1E] bg-white px-10 py-2 rounded-full text-2xl transition-color duration-200 hover:bg-[#E0E0E0]">Contact</button></a>
         <!-- <svg width="65" height="44" viewBox="0 0 65 44" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M64 42.5C51 45.5 38.6 40 35 35.5C19.5 16.125 39.5 17.5 43 22.5C50.2197 32.8139 33 36.5 19.5 27.5C9.16113 20.6074 3.16667 6.33333 2.5 1M2.5 1L1 17.5M2.5 1L15 9.5" stroke="black"/>
