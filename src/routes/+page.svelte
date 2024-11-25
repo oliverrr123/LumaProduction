@@ -130,12 +130,7 @@
                 setTimeout(() => {
                     about3.style.transform = 'translateY(0)';
                 }, 500);
-            }
-
-            // // Adjust the path length of the arrow based on scroll position
-            // if (arrow) {
-            //     let scrollPercentage = (document.getElemen.)
-            // }       
+            }      
         });
 
     });
@@ -184,20 +179,6 @@
             {/each}
         </div>
         <p class="text-center text-[#1E1E1E] opacity-50 pb-10">More will be shown soon...</p>
-        <!-- <div class="flex flex-col gap-8 pb-20">
-            <div class="flex justify-center gap-8">
-                <a title="Lamborghini Huracan Evo Edit for Dwiger Automotive" href="https://www.instagram.com/p/DCJpYVqoWQY/" target="_blank"><img src="/images/ourwork/HuracanEdit.jpg" width="175px" alt="Video Thumbnail - Lamborghini Huracan Evo Edit for Dwiger Automotive" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
-                <a title="Marketing Video for Realyx" href="https://www.instagram.com/p/DCmEmRXAgIK/" target="_blank"><img src="/images/ourwork/Realyx.jpg" width="175px" alt="Video Thumbnail - Marketing Video for Realyx" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
-            </div>
-            <div class="flex justify-center gap-8">
-                <a title="Music Video for Mark Steiner" href="https://youtu.be/kXm4Nvl2DYw?si=JstOUSapeI3jxjUz" target="_blank"><img src="/images/ourwork/TwinFlames.jpg" width="175px" alt="Video Thumbnail - Music Video for Mark Steiner" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
-                <a title="Porsche Cayenne Polishing Edit for Dwiger Automotive" href="https://www.instagram.com/reel/DAlrmHkIp59/" target="_blank"><img src="/images/ourwork/PorscheCayennePolishingEdit.jpg" width="175px" alt="Video Thumbnail - Porsche Cayenne Polishing Edit for Dwiger Autostyle" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
-            </div>
-            <div class="flex justify-center gap-8">
-                <a title="Brabus G900 Edit for Dwiger Automotive" href="https://www.instagram.com/reel/DAQ9SmXowg3/" target="_blank"><img src="/images/ourwork/G900.jpg" width="175px" alt="Video Thumbnail - Brabus G900 Edit for Dwiger Automotive" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
-                <a title="RollsRoyce PDR Marketing Video + Edit for Dwiger Automotive" href="https://www.instagram.com/reel/C_TNntVo3un/" target="_blank"><img src="/images/ourwork/PDR.jpg" width="175px" alt="Video Thumbnail - RollsRoyce PDR Marketing Video + Edit for Dwiger Automotive" class="opacity-80 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)"></a>
-            </div>
-        </div> -->
     </section>
     <section class="bg-[#1E1E1E] flex flex-col items-center justify-center py-20 gap-10 pb-16">
         <h1 class="text-3xl text-center text-white px-5" style="text-shadow: 0 0 40px rgba(255, 255, 255, 0.25), 0 0 75px rgba(255, 255, 255, 0.55)">Bring your vision to reality:</h1>
