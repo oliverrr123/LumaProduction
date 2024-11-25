@@ -43,7 +43,7 @@
             link: 'https://www.instagram.com/reel/DAQ9SmXowg3/'
         },
         {
-            title: 'RollsRoyce PDR Marketing Video + Edit for Dwiger Automotive',
+            title: 'RollsRoyce PDR Marketing Video and Edit for Dwiger Automotive',
             link: 'https://www.instagram.com/reel/C_TNntVo3un/'
         }
     ]
