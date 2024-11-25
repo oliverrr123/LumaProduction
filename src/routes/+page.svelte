@@ -174,7 +174,7 @@
         <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 pb-6 place-items-center place-self-center place-content-center">
             {#each recentWork as recentWorkItem}
                 <a title={recentWorkItem.title} href={recentWorkItem.link} target="_blank">
-                    <img src="images/ourwork/{recentWorkItem.title}.jpg" alt="Video Thumbnail - {recentWorkItem.title}" class="opacity-80 w-36 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none m-3" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)">
+                    <img src="images/ourwork/{recentWorkItem.title}.jpg" alt="Video Thumbnail - {recentWorkItem.title}" class="opacity-80 w-36 hover:opacity-100 rounded-md transition-all duration-700 filter grayscale hover:filter-none m-2" style="box-shadow: 0 0 50px rgba(0, 0, 0, 0.5)">
                 </a>
             {/each}
         </div>
