@@ -1,3 +1,8 @@
+<svelte:head>
+    <title>Luma Production | Contact</title>
+</svelte:head>
+
+
 <div class="bg-white text-center h-[100vh]">
     <a href="/"><h1 class="text-[#1e1e1e] font-['Montserrat'] font-black text-6xl py-6 mb-[2vh] md:mb-[8vh]">Luma.</h1></a>
     <div class="w-fulltext-center font-['Montaga'] text-3xl bg-white text-[#1e1e1e] flex flex-col gap-[0.5vh] md:gap-6">

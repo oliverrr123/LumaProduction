@@ -170,6 +170,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>Luma Production</title>
+</svelte:head>
+
 <main class="font-['Montaga'] relative">
     <div id="whiteCircle" class="fixed inset-0 bg-white opacity-0 -z-10"></div> <!-- White circle element -->
     <section class="absolute top-0 w-full z-50" style="opacity: {opacity}; transition: opacity 1s;">
