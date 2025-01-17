@@ -12,7 +12,7 @@
         {
             name: 'Dwiger automotive',
             role: 'Car photos, marketing videos, car edits',
-            testimony: "Man! Cool<br>I really like it<br>We should do all the videos like that<br>That's what I want!!!<br>Very nice<br>I am happy<br>Let's film a lot!!!!<br>"
+            testimony: "Man! Cool\nI really like it\nWe should do all the videos like that\nThat's what I want!!!\nVery nice\nI am happy\nLet's film a lot!!!!"
         },
         {
             name: 'Realyx',
@@ -48,6 +48,8 @@
         }
     ]
 
+    let opacity: number = 100;
+
     onMount(() => {
         const luma = document.getElementById('luma');
         const description = document.getElementById('description');
@@ -61,6 +63,15 @@
         if (arrow) {
             const pathLength = arrow.clientHeight;
 
+        }
+
+        let a = window.scrollY;
+
+        console.log(a);
+
+        if (a > 5) {
+            console.log("yes")
+            opacity = 0;
         }
     
         if (luma) {
@@ -96,10 +107,15 @@
             }, 2500);
         }
         
+        // let canScroll = true;
         
         window.addEventListener('scroll', () => {
             scroll = window.scrollY;
-            if (scrollTxt && scroll > 10) {
+
+            if (scroll < 5) {
+                opacity = 100;
+            }
+            if (scrollTxt && scroll > 5) {
                 scrollTxt.style.opacity = '0';
             }
             else if (scrollTxt) {
@@ -110,14 +126,19 @@
             // Animate the white circle based on scroll position
             if (whiteCircle) {
                 whiteCircle.style.transition = 'opacity 333ms ease-in-out';
-                if (scroll > 100) {
+                if (scroll > 5) {
                     whiteCircle.style.opacity = '1'; // Show the white circle
                 } else {
                     whiteCircle.style.opacity = '0'; // Hide the white circle
                 }
             }
 
-            if (about && about1 && about2 && about3 && scroll > 100) {
+            if (about && about1 && about2 && about3 && scroll > 5) {
+                // if (canScroll) {
+                //     window.scrollBy({top: 500, behavior: 'smooth'});
+                //     canScroll = false;
+                // }
+                opacity = 0;
                 about.style.transition = 'opacity 1s ease-in-out';
                 about.style.opacity = '1';
                 about1.style.transition = 'transform 1s ease-in-out';
@@ -133,21 +154,34 @@
             }      
         });
 
+        
     });
+
+    function smoothScroll() {
+        let scrollBy = 3000;
+        const intervalId = setInterval(() => {
+            window.scrollBy({top: scrollBy, behavior: 'smooth'});
+            scrollBy = scrollBy * 0.9;
+
+            if (scrollBy < 0.01) {
+                clearInterval(intervalId);
+            }
+        }, 10);
+    }
 </script>
 
-<main class="font-['Montaga']">
+<main class="font-['Montaga'] relative">
     <div id="whiteCircle" class="fixed inset-0 bg-white opacity-0 -z-10"></div> <!-- White circle element -->
-    <section>
+    <section class="absolute top-0 w-full z-50" style="opacity: {opacity}; transition: opacity 1s;">
         <div class="flex flex-col items-center justify-center min-h-[100vh] text-7xl lg:text-8xl gap-y-2">
             <h1 id="luma" class="font-['Montserrat'] opacity-0 translate-y-10 font-black">Luma.</h1>
             <p id="description" class="text-base ">your Media Production Agency</p>
         </div>
-        <p id="scrollTxt" class="absolute bottom-10 w-full text-center justify-center text-xs">
+        <button id="scrollTxt" class="absolute bottom-10 w-full text-center justify-center text-xs" on:click={smoothScroll}>
             scroll to begin
-        </p>
+        </button>
     </section>
-    <section id="about" class="flex flex-col justify-around gap-16 m-5 mb-64 text-[#1E1E1E] opacity-0 items-center text-center text-xl sm:px-10 sm:text-2xl">
+    <section id="about" class="flex flex-col justify-around gap-16 m-5 relative pt-96 mb-32 text-[#1E1E1E] opacity-0 items-center text-center text-xl sm:px-10 sm:text-2xl">
         <p id="about1" class="translate-y-10">No matter your project size, budget or requirements, we will always do our best to bring your vision to reality.</p>
         <p id="about2" class="translate-y-10">We will provide a solution for all your photo, video or visual projects.</p>
         <p id="about3" class="translate-y-10">Whether it's a commercial car photoshoot, music video, marketing ad, animation or anything else, we've got you covered.</p>
@@ -164,7 +198,7 @@
                             <h4 class=" text-sm opacity-50">{testimonials[0].role}</h4>
                         </div>
                     </div>
-                    <p class="my-4 mx-7 opacity-75">{@html testimonials[0].testimony}</p>
+                    <p class="my-4 mx-7 opacity-75">{testimonials[0].testimony}</p>
                 </div>
                 <div class="col-span-1 md:col-span-4 w-full bg-[#3a3a3a] rounded-xl h-[100%]">
                     <div class="flex items-center bg-[rgb(42,42,42)] p-5 rounded-t-xl">
@@ -174,7 +208,7 @@
                             <h4 class=" text-sm opacity-50">{testimonials[1].role}</h4>
                         </div>
                     </div>
-                    <p class="my-4 mx-7 opacity-75">{@html testimonials[1].testimony}</p>
+                    <p class="my-4 mx-7 opacity-75 whitespace-pre-wrap">{testimonials[1].testimony}</p>
                 </div>
                 <div class="col-span-1 md:col-span-3 bg-[#3a3a3a] rounded-xl h-[100%]">
                     <div class="flex items-center bg-[rgb(42,42,42)] p-5 rounded-t-xl">
@@ -184,7 +218,7 @@
                             <h4 class=" text-sm opacity-50">{testimonials[2].role}</h4>
                         </div>
                     </div>
-                    <p class="my-4 mx-7 opacity-75">{@html testimonials[2].testimony}</p>
+                    <p class="my-4 mx-7 opacity-75">{testimonials[2].testimony}</p>
                 </div>
             <!-- {/each} -->
         </div>
