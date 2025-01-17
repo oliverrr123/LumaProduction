@@ -112,10 +112,10 @@
         window.addEventListener('scroll', () => {
             scroll = window.scrollY;
 
-            if (scroll < 5) {
+            if (scroll < 10) {
                 opacity = 100;
             }
-            if (scrollTxt && scroll > 5) {
+            if (scrollTxt && scroll > 10) {
                 scrollTxt.style.opacity = '0';
             }
             else if (scrollTxt) {
@@ -133,7 +133,7 @@
                 }
             }
 
-            if (about && about1 && about2 && about3 && scroll > 5) {
+            if (about && about1 && about2 && about3 && scroll > 10) {
                 // if (canScroll) {
                 //     window.scrollBy({top: 500, behavior: 'smooth'});
                 //     canScroll = false;
@@ -185,7 +185,7 @@
             scroll to begin
         </button>
     </section>
-    <section id="about" class="flex flex-col justify-around gap-16 m-5 relative pt-96 mb-32 text-[#1E1E1E] opacity-0 items-center text-center text-xl sm:px-10 sm:text-2xl">
+    <section id="about" class="flex flex-col justify-around gap-16 m-5 relative pt-96 lg:pt-[36rem] mb-32 text-[#1E1E1E] opacity-0 items-center text-center text-xl sm:px-10 sm:text-2xl">
         <p id="about1" class="translate-y-10">No matter your project size, budget or requirements, we will always do our best to bring your vision to reality.</p>
         <p id="about2" class="translate-y-10">We will provide a solution for all your photo, video or visual projects.</p>
         <p id="about3" class="translate-y-10">Whether it's a commercial car photoshoot, music video, marketing ad, animation or anything else, we've got you covered.</p>
